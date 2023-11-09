@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 95%;
+  top: 15%;
+  border-radius: 50%;
+  cursor: pointer;
+}
