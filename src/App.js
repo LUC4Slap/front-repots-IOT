@@ -53,7 +53,16 @@ const App = () => {
       >
         <FindReportButton findReport={findReport} />
         {markers.length > 0 ? (
-          markers.map((item) => <Marker position={item} />)
+          markers.map((item) => (
+            <Marker
+              key={item.lat}
+              position={item}
+              icon={{
+                url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png",
+                scale: 0.5,
+              }}
+            />
+          ))
         ) : (
           // <Marker position={center} />
           <></>
